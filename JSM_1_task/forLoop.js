@@ -107,6 +107,6 @@ let numberAmount = prompt("how many numbers you want to give to the program?");
 for (i = 0; i <= numberAmount; i++) {}
 // Make a program that asks ten numbers and in the end prints out two biggest numbers.
 let counter = 10;
-let number = prompt("Enter a numbe: ");
+let number = prompt("Enter a number: ");
 
 // Make a program that asks ten numbers. Program calculates and prints out sum and average, also prints out the smallest and biggest number.
