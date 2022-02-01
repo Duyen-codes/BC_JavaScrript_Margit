@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Background Generator</title>
+  </head>
+  <body>
+    <h1>Linear gradient Generator</h1>
+    <!-- Color input form  -->
+    <form>
+      <input class="color1" type="color" name="color1" value="#74ceda" />
+      <input class="color2" type="color" name="color2" value="#e9adb7" />
+
+      <!-- Direction  -->
+      <h2>Direction</h2>
+      <div>
+        <label for="bottom">To bottom</label>
+        <input id="bottom" type="radio" value="to bottom" name="direction" />
+      </div>
+
+      <div>
+        <label for="top">To top</label>
+        <input id="top" type="radio" value="to top" name="direction" />
+      </div>
+
+      <div>
+        <label for="left">To left</label>
+        <input id="left" type="radio" value="to left" name="direction" />
+      </div>
+      <div>
+        <label for="right">To right</label>
+        <input id="right" type="radio" value="to right" name="direction" />
+      </div>
+      <p class="color-code"></p>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>

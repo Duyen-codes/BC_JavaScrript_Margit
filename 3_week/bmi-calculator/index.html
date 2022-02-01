@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BMI calculator</title>
+  </head>
+  <body>
+    <h1>BMI Calculator</h1>
+    <p class="app-desc">
+      Make a program that calculates body mass index. The BMI is defined as the
+      body mass divided by the square of the body height, and is universally
+      expressed in units of kg/m2, resulting from mass in kilograms and height
+      in metres. Based on result display correct range:
+    </p>
+    <ul>
+      <li>BMI Status Below 18.5</li>
+      <li>Underweight 18.5 – 24.9 Normal</li>
+      <li>or Healthy Weight 25.0 – 29.9 Pre-obesity</li>
+      <li>30.0 and Obesity</li>
+    </ul>
+
+    <label for="avatar">Choose a profile pictures:</label>
+    <input type="file" id="avatar" accept="image/png, image/jpeg" />
+    <div class="board">
+      <div class="input-field">
+        <label for="weight">Weight: </label>
+        <input id="weight" type="number" placeholder="Enter weight in kg" />
+      </div>
+      <div class="input-field">
+        <label for="height">Height: </label>
+        <input id="height" type="number" placeholder="Enter height in cm" />
+      </div>
+      <button class="btn" onclick="bmiCalc()">Calculate BMI</button>
+      <p class="result"></p>
+    </div>
+    <footer><p class="date">JS 3 week 1.2.2022</p></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
