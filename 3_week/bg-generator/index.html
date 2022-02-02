@@ -4,37 +4,135 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style sheet  -->
     <link rel="stylesheet" href="style.css" />
+    <!-- font awesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <title>Background Generator</title>
   </head>
   <body>
-    <h1>Linear gradient Generator</h1>
-    <!-- Color input form  -->
+    <!-- Form  -->
     <form>
-      <input class="color1" type="color" name="color1" value="#74ceda" />
-      <input class="color2" type="color" name="color2" value="#e9adb7" />
-
-      <!-- Direction  -->
-      <h2>Direction</h2>
+      <!-- form header  -->
       <div>
-        <label for="bottom">To bottom</label>
-        <input id="bottom" type="radio" value="to bottom" name="direction" />
+        <h1>Linear gradient Generator</h1>
+        <h2>Colors</h2>
+        <input class="color1" type="color" name="color1" value="#b3ffab" />
+        <input class="color2" type="color" name="color2" value="#12fff7" />
       </div>
 
-      <div>
-        <label for="top">To top</label>
-        <input id="top" type="radio" value="to top" name="direction" />
-      </div>
+      <!-- Direction  wrapper -->
+      <div class="gradient-container">
+        <h2>Direction</h2>
+        <div class="direction-container">
+          <!-- to bottom wrapper  -->
+          <div class="to-bottom-wrap">
+            <!-- to bottom right  -->
+            <div class="direction">
+              <label for="bottom-right">
+                <span style="font-size: 30px">&#8600;</span>
+              </label>
+              <input
+                type="radio"
+                id="bottom-right"
+                value="to bottom right"
+                name="direction"
+              />
+            </div>
+            <!-- to bottom  -->
+            <div class="direction">
+              <label for="bottom">
+                <span style="font-size: 30px">&#8595;</span></label
+              >
+              <input
+                id="bottom"
+                type="radio"
+                value="to bottom"
+                name="direction"
+              />
+            </div>
 
-      <div>
-        <label for="left">To left</label>
-        <input id="left" type="radio" value="to left" name="direction" />
+            <!-- to bottom left  -->
+            <div class="direction">
+              <label for="bottom-left"
+                ><span style="font-size: 30px">&#8601;</span></label
+              >
+              <input
+                type="radio"
+                id="bottom-left"
+                value="to bottom left"
+                name="direction"
+              />
+            </div>
+          </div>
+
+          <!-- left and right wrapper  -->
+          <div class="left-right-wrap">
+            <!-- to right  -->
+            <div class="direction">
+              <label for="right"
+                ><span style="font-size: 30px">&#8594;</span></label
+              >
+              <input
+                id="right"
+                type="radio"
+                value="to right"
+                name="direction"
+              />
+            </div>
+            <!-- to left  -->
+            <div class="direction">
+              <label for="left"
+                ><span style="font-size: 30px">&#8592;</span></label
+              >
+              <input id="left" type="radio" value="to left" name="direction" />
+            </div>
+          </div>
+
+          <!-- to to wrapper  -->
+          <div class="to-top-wrap">
+            <!-- to top right  -->
+            <div class="direction">
+              <label for="top-right"
+                ><span style="font-size: 30px">&#8599;</span></label
+              >
+              <input
+                id="top-right"
+                type="radio"
+                value="to top right"
+                name="direction"
+              />
+            </div>
+            <!-- to top  -->
+            <div class="direction">
+              <label for="top"
+                ><span style="font-size: 30px">&#8593;</span></label
+              >
+              <input id="top" type="radio" value="to top" name="direction" />
+            </div>
+            <!-- to top left  -->
+            <div class="direction">
+              <label for="top-left"
+                ><span style="font-size: 30px">&#8598;</span></label
+              >
+              <input
+                type="radio"
+                id="top-left"
+                value="to top left"
+                name="direction"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <label for="right">To right</label>
-        <input id="right" type="radio" value="to right" name="direction" />
+      <!-- CSS code  -->
+      <div class="css-code">
+        <h2>CSS code:</h2>
+        <p class="color-code"></p>
       </div>
-      <p class="color-code"></p>
     </form>
     <script src="main.js"></script>
   </body>
