@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car Licence</title>
+  </head>
+  <body>
+    <!-- Search -->
+    <header class="container">
+      <form id="searchData" action="">
+        <h2>Search Car by Licence Number</h2>
+        <div class="form_group">
+          <label for="search">Enter licence number</label>
+          <input type="text" id="search" />
+        </div>
+        <button>Search</button>
+        <p class="result-para"></p>
+      </form>
+    </header>
+
+    <!-- Insert car data section  -->
+    <main>
+      <section class="input container">
+        <h2>Insert new car</h2>
+        <form action="" id="inputData">
+          <div class="form-control">
+            <label for="licence"> Licence number</label>
+            <input type="text" id="licence" />
+          </div>
+          <!-- maker -->
+          <div class="form-control">
+            <label for="maker">Maker</label>
+            <input type="text" id="maker" />
+          </div>
+          <!-- model  -->
+          <div class="form-control">
+            <label for="model">Model</label>
+            <input type="text" id="model" />
+          </div>
+          <!-- owner  -->
+          <div class="form-control">
+            <label for="owner">Owner</label>
+            <input type="text" id="owner" />
+          </div>
+          <!-- price  -->
+          <div class="form-control">
+            <label for="price">Price</label>
+            <input type="number" id="price" />
+          </div>
+          <!-- color   -->
+          <div class="form-control">
+            <label for="color">Color</label>
+            <input type="text" id="color" />
+          </div>
+
+          <!-- <button class="add-btn" type="submit">Add car</button>
+          <button class="reset-btn">Reset</button> -->
+
+          <input type="submit" value="Add car" />
+          <input type="submit" value="Reset" />
+        </form>
+      </section>
+
+      <section class="output container">
+        <h2>Cars database</h2>
+        <div class="result"></div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
