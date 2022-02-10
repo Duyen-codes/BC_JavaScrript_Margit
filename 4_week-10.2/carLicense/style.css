@@ -1,23 +1,94 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
 body {
-  background-color: rgb(159, 236, 236);
+  background-color: #4ea9cc;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.6rem;
 }
 
-.form-control {
-  margin: 1rem;
+h2 {
+  margin: 2.5rem 0;
 }
 
-input {
-  font-family: inherit;
-  padding: 0.5rem;
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
 }
 
 label {
-  display: inline-block;
-  width: 150px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  margin: 2rem 0;
+}
+
+input {
+  /* font-family: inherit; */
+  padding: 0.625rem;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #035a7c;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  margin: 2rem 0 1rem;
+}
+
+main {
+  display: flex;
+}
+
+.input,
+.output {
+  flex: 1;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  font-weight: bold;
+  background-color: #4ea9cc;
+  color: white;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.search_result {
+  display: block;
+  height: 24px;
+  padding: 20px 0;
 }
